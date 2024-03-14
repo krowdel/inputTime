@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="pl" />
+<title>Godziny otwarcia</title>
+<script src="InputTime.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="inputTime.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+
+<header></header>
+<main>
+    <section class="container">
+        <h1>Przykładowe otwarcie: </h1>
+        <p>
+            Walidacja inputów za pomocą czystego JS. Koryguje wprowadzone dane tak aby wartości mieściły się w przedziale od 00:00 do 23:59.
+            Z autouzupełnieniem separatora między godziną a minutami. Po wprowadzaniu wartości minut czy godzin powyżej wartości czyści input i wyświetla komunikat błędu.
+        </p>
+        <div id="gama" class="inputTime">
+            <div class="bodyInput">
+            <label for="od"> Od </label> <input id="od" type="text" class="a4">
+            <label for="do"> Do </label> <input id="do" type="text" class="b3">
+            </div>
+        </div>
+    </section>
+</main>
+<footer> Copyright © Krowdel </footer>
+<script> const inTimeGama = new InputTime('gama'); </script>
+</body>
+</html>

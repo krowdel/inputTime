@@ -1,0 +1,22 @@
+.inputTime { padding: 15px 0; }
+.inputTime .bodyInput {
+    display: grid;
+    grid-template-columns: auto 3fr auto 3fr;
+    gap: 20px;
+    align-items: center;
+}
+.inputTime input {
+    padding: 5px;
+    text-align: center;
+}
+.inputTime .allertTime { 
+    margin-top: 25px;
+    padding: 7px 0;
+    color: darkred;
+    width: 100%;
+    text-align: center;
+    background: cornsilk;
+}
+@media (max-width: 600px) {
+    .inputTime .bodyInput { grid-template-columns: auto 3fr ; }
+}
